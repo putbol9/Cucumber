@@ -29,8 +29,8 @@ public class stepDefinition extends TestRunner{
 		@When("^I click on the search button$")
 		public void i_click_on_the_search_button(){
 		    // Write code here that turns the phrase above into concrete actions
-			search_box = driver.findElement(By.name("btnG"));
-			search_box.click();
+			search_box = driver.findElement(By.xpath("//html//span[1]/span[1]/input[1]"+Keys.ENTER));
+			
 		}
 
 		@Then("^I should be able to see the title contains the keyword$")

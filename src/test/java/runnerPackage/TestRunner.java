@@ -8,7 +8,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@CucumberOptions(features = {"features"}, glue = {"stepDefinationPackage"})
+@CucumberOptions(features = {"features"}, glue = {"stepDefinitionPackage"})
 public class TestRunner extends AbstractTestNGCucumberTests {
 
 	public static WebDriver driver;
