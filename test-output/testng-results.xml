@@ -1,36 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[<div "result">I navigate to google homepage (PASSED : 4s)</div>]]>
+      <![CDATA[<div "result">I navigate to google homepage (PASSED : 2s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I enter a keyword to search (PASSED : 2s)</div>]]>
+      <![CDATA[<div "result">I enter a &quot;bmw&quot; to search (PASSED : 0s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">I click on the search button (FAILED : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I should be able to see the title contains the keyword (SKIPPED)</div>]]>
+      <![CDATA[<div "result">I should be able to see the title contains the &quot;bmw&quot; (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I navigate to google homepage (PASSED : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter a &quot;toyota&quot; to search (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I click on the search button (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I should be able to see the title contains the &quot;toyota&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I navigate to google homepage (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter a &quot;Mercedes-benz&quot; to search (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I click on the search button (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I should be able to see the title contains the &quot;Mercedes-benz&quot; (PASSED : 0s)</div>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16622" started-at="2018-02-25T19:48:22Z" finished-at="2018-02-25T19:48:39Z">
+  <suite name="Default suite" duration-ms="20854" started-at="2018-02-25T21:22:25Z" finished-at="2018-02-25T21:22:46Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runnerPackage.TestRunner@2f686d1f]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runnerPackage.TestRunner@3fee9989]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="16622" started-at="2018-02-25T19:48:22Z" finished-at="2018-02-25T19:48:39Z">
+    <test name="Default test" duration-ms="20854" started-at="2018-02-25T21:22:25Z" finished-at="2018-02-25T21:22:46Z">
       <class name="runnerPackage.TestRunner">
-        <test-method status="PASS" signature="setup()[pri:0, instance:runnerPackage.TestRunner@2f686d1f]" name="setup" is-config="true" duration-ms="9044" started-at="2018-02-25T19:48:22Z" finished-at="2018-02-25T19:48:31Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:runnerPackage.TestRunner@3fee9989]" name="setup" is-config="true" duration-ms="6561" started-at="2018-02-25T21:22:25Z" finished-at="2018-02-25T21:22:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runnerPackage.TestRunner@2f686d1f]" name="setUpClass" is-config="true" duration-ms="712" started-at="2018-02-25T19:48:31Z" finished-at="2018-02-25T19:48:32Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runnerPackage.TestRunner@3fee9989]" name="setUpClass" is-config="true" duration-ms="481" started-at="2018-02-25T21:22:31Z" finished-at="2018-02-25T21:22:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runnerPackage.TestRunner@2f686d1f]" name="runScenario" duration-ms="6580" started-at="2018-02-25T19:48:32Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-02-25T19:48:39Z">
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runnerPackage.TestRunner@3fee9989]" name="runScenario" duration-ms="3582" started-at="2018-02-25T21:22:32Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-02-25T21:22:35Z">
           <params>
             <param index="0">
               <value>
@@ -45,7 +69,7 @@
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"name","selector":"btnK"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//html//span[1]/span[1]/input[1]"}
   (Session info: chrome=64.0.3282.186)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -54,11 +78,11 @@ Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.29
 System info: host: 'WIN-GEDESCREUP8', ip: '192.168.8.134', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\CYBERT~2\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
-Session ID: fbc72747b633c7ca631c9525bd4da1a3
-*** Element info: {Using=name, value=btnK}]]>
+Session ID: 95c650744181a951271b38bfcb3efdec
+*** Element info: {Using=xpath, value=//html//span[1]/span[1]/input[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"btnK"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//html//span[1]/span[1]/input[1]"}
   (Session info: chrome=64.0.3282.186)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -67,8 +91,8 @@ Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.29
 System info: host: 'WIN-GEDESCREUP8', ip: '192.168.8.134', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\CYBERT~2\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
-Session ID: fbc72747b633c7ca631c9525bd4da1a3
-*** Element info: {Using=name, value=btnK}
+Session ID: 95c650744181a951271b38bfcb3efdec
+*** Element info: {Using=xpath, value=//html//span[1]/span[1]/input[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -82,33 +106,93 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:449)
-at org.openqa.selenium.By$ByName.findElement(By.java:303)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
 at stepDefinitionPackage.stepDefinition.i_click_on_the_search_button(stepDefinition.java:32)
-at ✽.I click on the search button(features/sample.feature:6)
+at ✽.I click on the search button(features/sample.feature:14)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[<div "result">I navigate to google homepage (PASSED : 4s)</div>]]>
+              <![CDATA[<div "result">I navigate to google homepage (PASSED : 2s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I enter a keyword to search (PASSED : 2s)</div>]]>
+              <![CDATA[<div "result">I enter a &quot;bmw&quot; to search (PASSED : 0s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">I click on the search button (FAILED : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I should be able to see the title contains the keyword (SKIPPED)</div>]]>
+              <![CDATA[<div "result">I should be able to see the title contains the &quot;bmw&quot; (SKIPPED)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runnerPackage.TestRunner@2f686d1f]" name="tearDownClass" is-config="true" duration-ms="10" started-at="2018-02-25T19:48:39Z" finished-at="2018-02-25T19:48:39Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runnerPackage.TestRunner@3fee9989]" name="runScenario" duration-ms="4314" started-at="2018-02-25T21:22:35Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-02-25T21:22:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User searches a item on Google and check if the title matches the keyword"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This is just a test feature for cucumber"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I navigate to google homepage (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter a &quot;toyota&quot; to search (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I click on the search button (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I should be able to see the title contains the &quot;toyota&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runnerPackage.TestRunner@3fee9989]" name="runScenario" duration-ms="4483" started-at="2018-02-25T21:22:40Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-02-25T21:22:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User searches a item on Google and check if the title matches the keyword"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This is just a test feature for cucumber"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I navigate to google homepage (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter a &quot;Mercedes-benz&quot; to search (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I click on the search button (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I should be able to see the title contains the &quot;Mercedes-benz&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runnerPackage.TestRunner@3fee9989]" name="tearDownClass" is-config="true" duration-ms="10" started-at="2018-02-25T21:22:44Z" finished-at="2018-02-25T21:22:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:runnerPackage.TestRunner@3fee9989]" name="tearDown" is-config="true" duration-ms="1266" started-at="2018-02-25T21:22:44Z" finished-at="2018-02-25T21:22:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- runnerPackage.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

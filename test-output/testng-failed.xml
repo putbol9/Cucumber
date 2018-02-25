@@ -9,6 +9,7 @@
           <include name="runScenario" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="tearDownClass"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- runnerPackage.TestRunner -->
     </classes>

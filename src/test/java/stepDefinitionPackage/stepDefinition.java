@@ -29,13 +29,24 @@ public class stepDefinition extends TestRunner{
 		@When("^I click on the search button$")
 		public void i_click_on_the_search_button(){
 		    // Write code here that turns the phrase above into concrete actions
-			search_box = driver.findElement(By.xpath("//html//span[1]/span[1]/input[1]"+Keys.ENTER));
-			
+			search_box = driver.findElement(By.xpath("//html//span[1]/span[1]/input[1]"));
+			search_box.click();
 		}
 
 		@Then("^I should be able to see the title contains the keyword$")
-		public void i_should_be_able_to_see_the_title_contains_the_keyword() {
+		public void i_should_be_able_to_see_the_title_contains_the_keyword(String keyword) {
 		    // Write code here that turns the phrase above into concrete actions
-			Assert.assertTrue(driver.getTitle().contains("porsche"));
+			Assert.assertTrue(driver.getTitle().contains(keyword));
+		}
+		
+		@When("^I enter a \"([^\"]*)\" to search$")
+		public void i_enter_a_to_search(String keyword) {
+			search_box = driver.findElement(By.name("q"));
+			search_box.sendKeys(keyword);
+		}
+
+		@Then("^I should be able to see the title contains the \"([^\"]*)\"$")
+		public void i_should_be_able_to_see_the_title_contains_the(String keyword) {
+			
 		}
 }
